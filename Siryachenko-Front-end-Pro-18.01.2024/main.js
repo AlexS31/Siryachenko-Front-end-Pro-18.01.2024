@@ -1,7 +1,8 @@
-console.log (1)
 
-const prompt = window.prompt ('prompt')
+user = window.prompt ('Iм`я користувача')
 
 console.log (prompt)
 
-console.log (2)
+ alert = window.alert ('Hello, ' +user+ ', How are you?')
+
+console.log(alert)
