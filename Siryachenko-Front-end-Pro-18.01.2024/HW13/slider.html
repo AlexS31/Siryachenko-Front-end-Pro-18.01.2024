@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Слайдер базовий</title>
+    <style>
+        #slider-container {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        #slider-image {
+            width: 100%;
+            height: auto;
+        }
+        .slider-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        #prev-button {
+            left: 0;
+        }
+        #next-button {
+            right: 0;
+        }
+    </style>
+    <script src="slider.js" defer></script>
+</head>
+<body>
+    <div id="slider-container">
+        <img id="slider-image" src="1.jpg" alt="Slider Image">
+        <button id="prev-button" class="slider-button" onclick="prevSlide()">Prev</button>
+        <button id="next-button" class="slider-button" onclick="nextSlide()">Next</button>
+    </div>
+</body>
+</html>
