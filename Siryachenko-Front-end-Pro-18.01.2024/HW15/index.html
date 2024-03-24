@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подоба інтернет-магазину</title>
+    <script src="main.js" defer></script>
+    <style>
+        .container {
+            display: flex;
+        }
+        .categories, .products, .details {
+            flex: 1;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="categories">
+            <h2>Категорiї</h2>
+            <ul id="category-list">
+                <li data-category="electronics">Електронiка</li>
+                <li data-category="clothing">Одяг</li>
+                <li data-category="books">Книги</li>
+            </ul>
+        </div>
+        <div class="products">
+            <h2>Товари</h2>
+            <ul id="product-list">
+            </ul>
+        </div>
+        <div class="details">
+            <h2>Деталi</h2>
+            <div id="product-details">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
